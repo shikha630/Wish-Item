@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Wish Item " max_length="40" name="x_735538_wish_list_wish_item" type="collection">
+    <element label="Wish Item " max_length="40" name="x_735538_wish_list_wish_item" sizeclass="0" type="collection">
         <element attributes="edge_encryption_enabled=true" display="true" label=" Item" max_length="125" name="item" type="string"/>
         <element calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" label="Quantity" max_length="40" name="quantity" type="integer"/>
         <element label="URL" max_length="1024" name="url" type="url"/>
+        <element attributes="edge_encryption_enabled=true" label="Display name" max_length="300" name="u_string_1" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Requester" mandatory="true" max_length="40" name="u_string_2" type="string"/>
     </element>
 </database>
